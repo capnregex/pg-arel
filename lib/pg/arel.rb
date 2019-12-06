@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
-module PG
-  module Arel # :nodoc: all
+require "pg/arel/version"
+
+module Pg
+  module Arel
+    class Error < StandardError; end
+    # Your code goes here...
     extend ArrayOperators
   end
 end
